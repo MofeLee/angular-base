@@ -1,0 +1,21 @@
+<div class="login-form">
+    <div class="logo"><img src="packages/angular-base_ui-login/client/assets/your_logo_here.gif"/></div>
+
+    <form id="login-form" ng-submit="doLogin()">
+        <div class="email-group">
+            <label for="email-input">
+                E-Mail or User Name:
+            </label><br/>
+            <input ng-model="login.email" autofocus required type="text" id="email-input">
+        </div>
+        <div class="password-group">
+            <label for="password">
+                Password:
+            </label><br/>
+            <input ng-model="login.password" required type="password" id="password-input">
+        </div>
+        <div class="login-button-group">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
